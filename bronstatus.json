@@ -1,0 +1,75 @@
+{
+  "run_at": "2026-09-15T20:51:52",
+  "sources": [
+    {
+      "source": "VDAB",
+      "status": "ok",
+      "count": 722,
+      "url": "https://www.vdab.be/vindeenjob/vacatures",
+      "error": ""
+    },
+    {
+      "source": "StepStone",
+      "status": "ok",
+      "count": 406,
+      "url": "https://www.stepstone.be/jobs",
+      "error": ""
+    },
+    {
+      "source": "Jobat",
+      "status": "no_results",
+      "count": 0,
+      "url": "https://www.jobat.be/nl/jobs/functietitels",
+      "error": ""
+    },
+    {
+      "source": "Stad Antwerpen",
+      "status": "ok",
+      "count": 17,
+      "url": "https://job.antwerpen.be/go/Alle-vacatures/4474301/",
+      "error": ""
+    },
+    {
+      "source": "11.11.11",
+      "status": "ok",
+      "count": 25,
+      "url": "https://11.be/vacatures",
+      "error": ""
+    },
+    {
+      "source": "CAW Pro",
+      "status": "ok",
+      "count": 5,
+      "url": "https://www.cawpro.be/jobs/",
+      "error": ""
+    },
+    {
+      "source": "Atlas",
+      "status": "no_results",
+      "count": 0,
+      "url": "https://www.atlas-antwerpen.be/nl/professionals/vacatures/medewerkers",
+      "error": ""
+    },
+    {
+      "source": "Sociaalwerkjobs",
+      "status": "ok",
+      "count": 3,
+      "url": "https://www.sociaalwerkjobs.be/",
+      "error": ""
+    },
+    {
+      "source": "Werkenbijdeoverheid",
+      "status": "ok",
+      "count": 21,
+      "url": "https://www.werkenbijdeoverheid.be/",
+      "error": ""
+    },
+    {
+      "source": "Socius",
+      "status": "ok",
+      "count": 75,
+      "url": "https://socius.be/vacature/",
+      "error": ""
+    }
+  ]
+}
