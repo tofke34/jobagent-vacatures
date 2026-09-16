@@ -1,17 +1,17 @@
 {
-  "run_at": "2026-09-15T20:51:52",
+  "run_at": "2026-09-16T12:20:34",
   "sources": [
     {
       "source": "VDAB",
       "status": "ok",
-      "count": 722,
+      "count": 694,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
     {
       "source": "StepStone",
       "status": "ok",
-      "count": 406,
+      "count": 361,
       "url": "https://www.stepstone.be/jobs",
       "error": ""
     },
@@ -39,7 +39,7 @@
     {
       "source": "CAW Pro",
       "status": "ok",
-      "count": 5,
+      "count": 8,
       "url": "https://www.cawpro.be/jobs/",
       "error": ""
     },
