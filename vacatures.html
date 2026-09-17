@@ -981,305 +981,6 @@
     </style>
 
 
-<style id="jobagent-feedback-polish">
-    .feedback-panel {
-        margin-top: 22px;
-        padding: 22px;
-        border: 1px solid rgba(100, 116, 139, .20);
-        border-radius: 18px;
-        background: linear-gradient(180deg, rgba(248,250,252,.96), rgba(255,255,255,.98));
-        box-shadow: 0 8px 28px rgba(15,23,42,.06);
-    }
-
-    .rating-title {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 20px;
-    }
-
-    .rating-title-icon {
-        display: grid;
-        place-items: center;
-        width: 36px;
-        height: 36px;
-        flex: 0 0 36px;
-        border-radius: 10px;
-        background: #0f172a;
-        color: #fff;
-        font-weight: 800;
-    }
-
-    .rating-title strong,
-    .feedback-group-heading strong {
-        display: block;
-        color: #0f172a;
-        font-size: 15px;
-    }
-
-    .rating-title small,
-    .feedback-group-heading small {
-        display: block;
-        margin-top: 3px;
-        color: #64748b;
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
-    .feedback-group {
-        padding: 17px 0;
-        border-top: 1px solid rgba(148,163,184,.22);
-    }
-
-    .feedback-group-heading {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-        margin-bottom: 12px;
-    }
-
-    .feedback-step {
-        display: grid;
-        place-items: center;
-        width: 24px;
-        height: 24px;
-        flex: 0 0 24px;
-        border: 1px solid #cbd5e1;
-        border-radius: 50%;
-        background: #fff;
-        color: #475569;
-        font-size: 12px;
-        font-weight: 800;
-    }
-
-    .feedback-options {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .rating-button {
-        min-height: 40px;
-        padding: 9px 13px;
-        border: 1px solid #cbd5e1;
-        border-radius: 10px;
-        background: #fff;
-        color: #334155;
-        font-size: 13px;
-        font-weight: 650;
-        cursor: pointer;
-        transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease, background .12s ease;
-    }
-
-    .rating-button:hover {
-        transform: translateY(-1px);
-        border-color: #94a3b8;
-        box-shadow: 0 4px 12px rgba(15,23,42,.08);
-    }
-
-    .rating-button.selected {
-        border-color: #0f172a;
-        background: #0f172a;
-        color: #fff;
-        box-shadow: 0 5px 14px rgba(15,23,42,.16);
-    }
-
-    .rating-button.interesting.selected {
-        border-color: #b45309;
-        background: #fffbeb;
-        color: #92400e;
-    }
-
-    .rating-button.negative.selected {
-        border-color: #b91c1c;
-        background: #fef2f2;
-        color: #991b1b;
-    }
-
-    .feedback-reasons {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-        gap: 8px;
-    }
-
-    .feedback-reason-option {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 9px;
-        min-height: 42px;
-        padding: 9px 11px;
-        border: 1px solid #e2e8f0;
-        border-radius: 10px;
-        background: #fff;
-        color: #475569;
-        font-size: 13px;
-        cursor: pointer;
-        transition: border-color .12s ease, background .12s ease, box-shadow .12s ease;
-    }
-
-    .feedback-reason-option:hover {
-        border-color: #94a3b8;
-        background: #f8fafc;
-    }
-
-    .feedback-reason-option:has(input:checked) {
-        border-color: #0f172a;
-        background: #f1f5f9;
-        color: #0f172a;
-        box-shadow: inset 0 0 0 1px rgba(15,23,42,.08);
-    }
-
-    .feedback-reason-checkbox {
-        appearance: none;
-        -webkit-appearance: none;
-        width: 19px;
-        height: 19px;
-        flex: 0 0 19px;
-        margin: 0;
-        border: 2px solid #94a3b8;
-        border-radius: 6px;
-        background: #fff;
-        cursor: pointer;
-        position: relative;
-        transition: background .12s ease, border-color .12s ease, transform .12s ease;
-    }
-
-    .feedback-reason-checkbox:checked {
-        border-color: #0f172a;
-        background: #0f172a;
-    }
-
-    .feedback-reason-checkbox:checked::after {
-        content: "";
-        position: absolute;
-        left: 5px;
-        top: 1px;
-        width: 5px;
-        height: 10px;
-        border: solid #fff;
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
-    }
-
-    .feedback-reason-checkbox:focus-visible,
-    .rating-button:focus-visible,
-    .feedback-sync:focus-visible {
-        outline: 3px solid rgba(59,130,246,.25);
-        outline-offset: 2px;
-    }
-
-    .feedback-footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px;
-        margin-top: 4px;
-        padding-top: 17px;
-        border-top: 1px solid rgba(148,163,184,.22);
-    }
-
-    .feedback-hint {
-        color: #64748b;
-        font-size: 11px;
-        line-height: 1.45;
-    }
-
-    .feedback-sync {
-        flex: 0 0 auto;
-        min-height: 40px;
-        padding: 9px 14px;
-        border: 1px solid #0f172a;
-        border-radius: 10px;
-        background: #0f172a;
-        color: #fff;
-        font-weight: 750;
-        cursor: pointer;
-        transition: transform .12s ease, box-shadow .12s ease;
-    }
-
-    .feedback-sync:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 5px 14px rgba(15,23,42,.18);
-    }
-
-    .job-details .info-box {
-        margin-top: 16px;
-        padding: 18px;
-        border-radius: 16px;
-        border: 1px solid rgba(148,163,184,.22);
-        background: #fff;
-    }
-
-    .job-details .info-box.cv {
-        border-left: 4px solid #2563eb;
-        background: linear-gradient(180deg, #eff6ff, #fff);
-    }
-
-    .job-details .info-box.motivation {
-        border-left: 4px solid #7c3aed;
-        background: linear-gradient(180deg, #f5f3ff, #fff);
-    }
-
-    .job-details .info-box.motivation p {
-        white-space: pre-line;
-        line-height: 1.65;
-        color: #334155;
-    }
-
-    .application-help {
-        margin-top: 16px;
-        padding: 18px;
-        border: 1px solid rgba(16,185,129,.25);
-        border-radius: 16px;
-        background: linear-gradient(180deg, #ecfdf5, #fff);
-    }
-
-    .application-help .help-heading {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
-
-    .application-help .help-icon {
-        display: grid;
-        place-items: center;
-        width: 32px;
-        height: 32px;
-        border-radius: 9px;
-        background: #059669;
-        color: #fff;
-        font-weight: 800;
-    }
-
-    .application-help strong {
-        color: #064e3b;
-    }
-
-    .application-help p,
-    .application-help li {
-        color: #475569;
-        font-size: 13px;
-        line-height: 1.55;
-    }
-
-    .application-help ul {
-        margin: 8px 0 0;
-        padding-left: 19px;
-    }
-
-    @media (max-width: 680px) {
-        .feedback-panel { padding: 16px; border-radius: 15px; }
-        .feedback-options { display: grid; grid-template-columns: 1fr; }
-        .rating-button { width: 100%; text-align: left; }
-        .feedback-footer { align-items: stretch; flex-direction: column; }
-        .feedback-sync { width: 100%; }
-        .feedback-reasons { grid-template-columns: 1fr; }
-    }
-</style>
-
-
 <style id="jobagent-ui-polish">
 .job-details {
     display: block !important;
@@ -1416,7 +1117,7 @@
     </p>
 
     <p>
-        Laatst bijgewerkt: 17/09/2026 om 16:42
+        Laatst bijgewerkt: 17/09/2026 om 17:03
     </p>
 
 </section>
@@ -1427,7 +1128,7 @@
     <div class="stats">
 
         <div class="stat">
-            <strong>154</strong>
+            <strong>153</strong>
             <span>vacatures geselecteerd</span>
         </div>
 
@@ -1589,7 +1290,7 @@
         id="resultCount"
         class="result-count"
     >
-        154 vacatures zichtbaar
+        153 vacatures zichtbaar
     </div>
 
 </section>
@@ -1618,7 +1319,7 @@
                     </div>
 
                     <span class="profile-count">
-                        38 vacatures
+                        40 vacatures
                     </span>
 
                 </div>
@@ -1966,65 +1667,30 @@ Ga naar vacaturepagina van de organisatie
                         </div>
 
 
-                        <section class="rating feedback-panel">
-                            <div class="rating-title">
-                                <span class="rating-title-icon">✓</span>
-                                <div>
-                                    <strong>Jouw beoordeling</strong>
-                                    <small>Help JobAgent leren wat voor jou een goede vacature is.</small>
-                                </div>
+                        <div class="rating">
+                            <div class="rating-title">Beoordeling</div>
+                            <div class="feedback-row">
+                                <span class="feedback-label">Match</span>
+                                <button type="button" class="rating-button fit" data-fit="zeer_goede_match" onclick="setFit(this, 'zeer_goede_match')">✓ Zeer goede match</button>
+                                <button type="button" class="rating-button fit" data-fit="goede_match" onclick="setFit(this, 'goede_match')">✓ Goede match</button>
+                                <button type="button" class="rating-button fit" data-fit="onzeker" onclick="setFit(this, 'onzeker')">? Twijfelachtig</button>
+                                <button type="button" class="rating-button fit" data-fit="matige_match" onclick="setFit(this, 'matige_match')">~ Matige match</button>
+                                <button type="button" class="rating-button fit negative" data-fit="past_echt_niet" onclick="setFit(this, 'past_echt_niet')">✕ Past niet echt</button>
                             </div>
-
-                            <div class="feedback-group">
-                                <div class="feedback-group-heading">
-                                    <span class="feedback-step">1</span>
-                                    <div>
-                                        <strong>Hoe goed past deze vacature?</strong>
-                                        <small>Kies één optie</small>
-                                    </div>
-                                </div>
-                                <div class="feedback-options fit-options">
-                                    <button type="button" class="rating-button fit" data-fit="zeer_goede_match" onclick="setFit(this, 'zeer_goede_match')">✓ Zeer goede match</button>
-                                    <button type="button" class="rating-button fit" data-fit="goede_match" onclick="setFit(this, 'goede_match')">✓ Goede match</button>
-                                    <button type="button" class="rating-button fit" data-fit="onzeker" onclick="setFit(this, 'onzeker')">? Twijfelachtig</button>
-                                    <button type="button" class="rating-button fit" data-fit="matige_match" onclick="setFit(this, 'matige_match')">~ Matige match</button>
-                                    <button type="button" class="rating-button fit negative" data-fit="past_echt_niet" onclick="setFit(this, 'past_echt_niet')">✕ Past echt niet</button>
-                                </div>
+                            <div class="feedback-row">
+                                <span class="feedback-label">Interesse</span>
+                                <button type="button" class="rating-button interesting" data-interest="interessant" onclick="setInterest(this, 'interessant')">★ Interessant</button>
+                                <button type="button" class="rating-button" data-interest="neutraal" onclick="setInterest(this, 'neutraal')">— Neutraal</button>
+                                <button type="button" class="rating-button negative" data-interest="niet" onclick="setInterest(this, 'niet')">✕ Niet interessant</button>
                             </div>
-
-                            <div class="feedback-group">
-                                <div class="feedback-group-heading">
-                                    <span class="feedback-step">2</span>
-                                    <div>
-                                        <strong>Hoe interessant vind je ze?</strong>
-                                        <small>Dit staat los van de inhoudelijke match</small>
-                                    </div>
-                                </div>
-                                <div class="feedback-options interest-options">
-                                    <button type="button" class="rating-button interesting" data-interest="interessant" onclick="setInterest(this, 'interessant')">★ Interessant</button>
-                                    <button type="button" class="rating-button" data-interest="neutraal" onclick="setInterest(this, 'neutraal')">— Neutraal</button>
-                                    <button type="button" class="rating-button negative" data-interest="niet" onclick="setInterest(this, 'niet')">✕ Niet interessant</button>
-                                </div>
-                            </div>
-
-                            <div class="feedback-group feedback-reason-group">
-                                <div class="feedback-group-heading">
-                                    <span class="feedback-step">3</span>
-                                    <div>
-                                        <strong>Waarom is ze minder passend?</strong>
-                                        <small>Vink gerust meerdere redenen aan</small>
-                                    </div>
-                                </div>
+                            <div class="feedback-reason">
+                                <div class="feedback-label">Waarom minder passend? (meerdere mogelijk)</div>
                                 <div class="feedback-reasons">
                                     <label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="student" onchange="setReason(this)"> Studentfunctie</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="senioriteit" onchange="setReason(this)"> Te senior/junior</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="locatie" onchange="setReason(this)"> Locatie</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="opleiding" onchange="setReason(this)"> Opleiding</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="ervaring" onchange="setReason(this)"> Werkervaring</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="contract" onchange="setReason(this)"> Contract/uren</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="inhoud" onchange="setReason(this)"> Inhoud van de functie</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="bedrijf" onchange="setReason(this)"> Bedrijf/cultuur</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="vereisten" onchange="setReason(this)"> Specifieke vereisten</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="salaris" onchange="setReason(this)"> Salaris/voorwaarden</label><label class="feedback-reason-option"><input type="checkbox" class="feedback-reason-checkbox" value="anders" onchange="setReason(this)"> Andere reden</label>
                                 </div>
                             </div>
-
-                            <div class="feedback-footer">
-                                <span class="feedback-hint">Je keuze wordt lokaal onthouden tot je ze naar GitHub verstuurt.</span>
-                                <button type="button" class="feedback-sync" onclick="syncFeedback(this)">Feedback opslaan via GitHub</button>
-                            </div>
-                        </section>
+                            <button type="button" class="feedback-sync" onclick="syncFeedback(this)">Feedback opslaan via GitHub</button>
+                        </div>
                     </div>
 
                 </article>
@@ -2319,7 +1985,6 @@ function setReason(input) {
     });
     all[key] = Object.assign({}, all[key], {reasons: reasons, updated_at: new Date().toISOString()});
     saveFeedback(all);
-    updateCard(card);
 }
 
 function syncFeedback(button) {
@@ -2352,41 +2017,6 @@ function syncFeedback(button) {
     setTimeout(function() { button.textContent = 'Feedback opslaan via GitHub'; }, 2500);
 }
 
-function addApplicationHelp() {
-    document.querySelectorAll('.job-card').forEach(function(card) {
-        const details = card.querySelector('.job-details');
-        const cvBox = details?.querySelector('.info-box.cv');
-        const motivationBox = details?.querySelector('.info-box.motivation');
-        if (!details || !cvBox || details.querySelector('.application-help')) return;
-
-        const matches = Array.from(cvBox.querySelectorAll('.cv-category li'))
-            .map(function(item) { return item.innerText.trim(); })
-            .filter(Boolean)
-            .slice(0, 6);
-
-        const help = document.createElement('div');
-        help.className = 'application-help';
-        help.innerHTML = '<div class="help-heading"><span class="help-icon">CV</span><strong>CV aanpassen voor deze vacature</strong></div>' +
-            (matches.length
-                ? '<p>Leg in je CV extra nadruk op deze punten:</p><ul>' +
-                  matches.map(function(match) { return '<li>' + escapeHtml(match) + '</li>'; }).join('') +
-                  '</ul>'
-                : '<p>Geen specifieke CV-match gevonden. Controleer vooral of je relevante ervaring, vaardigheden en resultaten duidelijk bovenaan staan.</p>');
-
-        if (motivationBox) {
-            motivationBox.insertAdjacentElement('afterend', help);
-        } else {
-            cvBox.insertAdjacentElement('afterend', help);
-        }
-    });
-}
-
-function escapeHtml(value) {
-    return String(value).replace(/[&<>'"]/g, function(char) {
-        return {'&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;'}[char];
-    });
-}
-
 function markNewVacancies() {
     const newUrls = new Set(window.JOBAGENT_NEW_URLS || []);
     document.querySelectorAll('.job-card').forEach(function(card) {
@@ -2399,6 +2029,7 @@ function markNewVacancies() {
             const badge = document.createElement('span');
             badge.className = 'new-badge';
             badge.textContent = '🆕 NIEUW';
+            badge.style.cssText = 'display:inline-block;padding:5px 9px;border-radius:999px;font-weight:800;font-size:12px;background:#dc2626;color:#fff;margin-right:8px;';
             top.insertBefore(badge, top.firstChild);
         }
     });
@@ -2414,7 +2045,6 @@ function markNewVacancies() {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.job-card').forEach(updateCard);
-    addApplicationHelp();
     markNewVacancies();
 });
 
