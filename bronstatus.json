@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-09-20T18:23:34",
+  "run_at": "2026-09-20T19:20:04",
   "sources": [
     {
       "source": "VDAB",
       "status": "ok",
-      "count": 696,
+      "count": 720,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
