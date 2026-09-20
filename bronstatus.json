@@ -1,17 +1,17 @@
 {
-  "run_at": "2026-09-20T20:08:27",
+  "run_at": "2026-09-20T20:49:29",
   "sources": [
     {
       "source": "VDAB",
       "status": "ok",
-      "count": 675,
+      "count": 710,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
     {
       "source": "StepStone",
       "status": "ok",
-      "count": 387,
+      "count": 375,
       "url": "https://www.stepstone.be/jobs",
       "error": ""
     },
@@ -31,10 +31,10 @@
     },
     {
       "source": "11.11.11",
-      "status": "ok",
-      "count": 25,
+      "status": "error",
+      "count": 0,
       "url": "https://11.be/vacatures",
-      "error": ""
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
     },
     {
       "source": "CAW Pro",
