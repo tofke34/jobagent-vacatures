@@ -1,17 +1,17 @@
 {
-  "run_at": "2026-09-21T18:27:10",
+  "run_at": "2026-09-21T19:03:28",
   "sources": [
     {
       "source": "VDAB",
-      "status": "no_results",
-      "count": 0,
+      "status": "ok",
+      "count": 646,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
     {
       "source": "StepStone",
       "status": "ok",
-      "count": 385,
+      "count": 405,
       "url": "https://www.stepstone.be/jobs",
       "error": ""
     },
@@ -60,7 +60,7 @@
     {
       "source": "Werkenbijdeoverheid",
       "status": "ok",
-      "count": 20,
+      "count": 21,
       "url": "https://www.werkenbijdeoverheid.be/",
       "error": ""
     },
