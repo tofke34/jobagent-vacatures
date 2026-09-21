@@ -1,17 +1,17 @@
 {
-  "run_at": "2026-09-20T20:49:29",
+  "run_at": "2026-09-21T08:23:06",
   "sources": [
     {
       "source": "VDAB",
       "status": "ok",
-      "count": 710,
+      "count": 719,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
     {
       "source": "StepStone",
       "status": "ok",
-      "count": 375,
+      "count": 380,
       "url": "https://www.stepstone.be/jobs",
       "error": ""
     },
@@ -25,16 +25,16 @@
     {
       "source": "Stad Antwerpen",
       "status": "ok",
-      "count": 17,
+      "count": 18,
       "url": "https://job.antwerpen.be/go/Alle-vacatures/4474301/",
       "error": ""
     },
     {
       "source": "11.11.11",
-      "status": "error",
-      "count": 0,
+      "status": "ok",
+      "count": 25,
       "url": "https://11.be/vacatures",
-      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+      "error": ""
     },
     {
       "source": "CAW Pro",
@@ -74,7 +74,7 @@
     {
       "source": "Vlaamse overheid",
       "status": "ok",
-      "count": 111,
+      "count": 106,
       "url": "https://www.vlaanderen.be/werken-voor-vlaanderen/vacatures",
       "error": ""
     }
