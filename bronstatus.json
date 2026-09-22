@@ -1,17 +1,17 @@
 {
-  "run_at": "2026-09-22T19:05:47",
+  "run_at": "2026-09-22T19:52:24",
   "sources": [
     {
       "source": "VDAB",
       "status": "ok",
-      "count": 567,
+      "count": 675,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
     {
       "source": "StepStone",
       "status": "ok",
-      "count": 392,
+      "count": 402,
       "url": "https://www.stepstone.be/jobs",
       "error": ""
     },
