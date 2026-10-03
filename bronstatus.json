@@ -1,17 +1,17 @@
 {
-  "run_at": "2026-10-02T09:11:14",
+  "run_at": "2026-10-03T08:44:28",
   "sources": [
     {
       "source": "VDAB",
       "status": "ok",
-      "count": 683,
+      "count": 600,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
     {
       "source": "StepStone",
       "status": "ok",
-      "count": 362,
+      "count": 328,
       "url": "https://www.stepstone.be/jobs",
       "error": ""
     },
@@ -74,7 +74,7 @@
     {
       "source": "Vlaamse overheid",
       "status": "ok",
-      "count": 103,
+      "count": 101,
       "url": "https://www.vlaanderen.be/werken-voor-vlaanderen/vacatures",
       "error": ""
     }
