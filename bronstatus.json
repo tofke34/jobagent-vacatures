@@ -1,17 +1,17 @@
 {
-  "run_at": "2026-10-05T09:49:50",
+  "run_at": "2026-10-06T09:38:09",
   "sources": [
     {
       "source": "VDAB",
       "status": "ok",
-      "count": 627,
+      "count": 652,
       "url": "https://www.vdab.be/vindeenjob/vacatures",
       "error": ""
     },
     {
       "source": "StepStone",
       "status": "ok",
-      "count": 312,
+      "count": 315,
       "url": "https://www.stepstone.be/jobs",
       "error": ""
     },
@@ -25,7 +25,7 @@
     {
       "source": "Stad Antwerpen",
       "status": "ok",
-      "count": 16,
+      "count": 14,
       "url": "https://job.antwerpen.be/go/Alle-vacatures/4474301/",
       "error": ""
     },
@@ -60,7 +60,7 @@
     {
       "source": "Werkenbijdeoverheid",
       "status": "ok",
-      "count": 20,
+      "count": 21,
       "url": "https://www.werkenbijdeoverheid.be/",
       "error": ""
     },
